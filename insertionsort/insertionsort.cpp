@@ -26,27 +26,3 @@ void input() {
 	}
 }
 
-void display() {
-	cout << endl;
-	cout << "=================================" << endl;
-	cout << "Element array yang telah tersusun" << endl;
-	cout << "=================================" << endl;
-	for (int j = 0; j < n; j++) {
-		cout << a[j] << endl;
-	}
-	cout << endl;
-
-}
-void insertionsort()
-{
-	int temp;
-	int j;
-
-	for (int)
-}
-		int main() {
-		input();
-		bubbleShortArray();
-		display();
-		return 0;
-}
