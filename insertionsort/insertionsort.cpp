@@ -51,6 +51,10 @@ void display() {
 	cout << endl;
 }
 int main() {
+	input();
+	insetionsort();
+	display();
+	return 0;
 
 
 }
