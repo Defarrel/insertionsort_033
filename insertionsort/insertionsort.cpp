@@ -27,16 +27,27 @@ void input() {
 }
 
 void insetionsort() {
-	int i, key, j;
-	for (i = 1; i < n; i++) {
-		key = a[i];
-		j = i - 1;
+	int temp;									
+	int j;										
 
-		while (j >= 0 && a[j] > key) {
-			a[j + 1] = a[j];
-			j = j - 1;
+	for (int i = 1; i < n; i++) {				
+
+		temp = a[i];							
+
+		j = i - 1;								
+
+		while (j >= 0 && a[j] > temp)     
+			
+		{
+			a[j + 1] = a[j];			
+			j = j - 1;						 
 		}
-		a[j + 1] = key;
+		a[j + 1] = temp;					
+
+		cout << "\nStep " << i << ": ";		
+		for (int k = 0; k < n; k++) {		
+			cout << a[k] << " ";			
+		}
 	}
 }
 
